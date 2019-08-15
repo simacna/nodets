@@ -10,6 +10,9 @@ router.get('/users', function(req, res, next) {
 //change app.use('/', usersRouter); in app.js
 //to have /users, below i can get rid of the /users
 //and only have /cool
+
+//below the '/users/cool' for example is called 
+// 'middlewear function, mounted']
 router.get('/users/cool', (req, res) => {
   res.send('hola hola');
 });
