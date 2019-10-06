@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
+var mongoDB = mongodb+srv://simacna:<S365663s>@expresstutorial-pznfm.mongodb.net/admin?retryWrites=true&w=majority
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

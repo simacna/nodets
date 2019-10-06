@@ -13,6 +13,9 @@ router.get('/users', function(req, res, next) {
 
 //below the '/users/cool' for example is called 
 // 'middlewear function, mounted']
+// console.log('test to see if morgans running'); //lol no
+
+
 router.get('/users/cool', (req, res) => {
   res.send('hola hola');
 });
@@ -26,3 +29,29 @@ module.exports = router;
 // router.get('/', (req, res, next)=> {
 //   res.send('yo!');
 // })
+
+
+
+//ex from express tutorial
+//how does one kno all methods attached to a 
+//req or response
+
+// app.use('user/:id', (req, res, next)=>{
+//   console.log(req.originalURL)
+// }, (req, res, next)=>{
+//   console.log(req.method);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
