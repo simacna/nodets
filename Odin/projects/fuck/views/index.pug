@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  br
+  ul
+    each message in messages
+      li(class="card mb-1 col-lg-4")
+        div(class="card-body")
+          h5(class="card-title")= message.text
+          p(class="card-text text-muted")= "- " + message.user
