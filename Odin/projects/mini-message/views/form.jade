@@ -1,4 +1,11 @@
+extends layout
 block content
-  h1 = title
-  form(methods='POST', action ='/new')
-    
+ h1= title
+ form(method=‘POST’, action=‘/new’)
+   .form-group
+     label(for=‘inputMessageText’) Message text
+     input#inputMessageText.form-control(type=‘text’ placeholder=‘Your message here’ name=‘text’ class=“col-lg-6”)
+   .form-group
+     label(for=‘inputUsernameText’) Username
+     input#inputUsernameText.form-control(type=‘text’ placeholder=‘Your user handle here’ name=‘user’ class=“col-lg-6")
+   button.btn.btn-primary(type=‘submit’) Submit

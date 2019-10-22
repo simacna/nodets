@@ -1,7 +1,12 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+ head
+   title= title
+   
+ body
+   div(class= 'container')
+     nav(class='nav justify-content-center')
+       a(class='nav-link', href='/')='home'
+       a(class='nav-link', href='/new')='Create a Message'
+     br
+     block content
