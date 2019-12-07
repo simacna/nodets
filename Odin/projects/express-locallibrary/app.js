@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
+var wiki = require('./wiki.js');
 //[line below] right before simacna there's a double slash
 //which was making everything after a comment so i added a double comma
 var mongoDB = "mongodb+srv://simacna:<S365663s>@expresstutorial-pznfm.mongodb.net/admin?retryWrites=true&w=majority)";
@@ -29,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 app.use('/', usersRouter);
-
+app.use('/wiki', wiki);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
 
